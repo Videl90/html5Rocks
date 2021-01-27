@@ -12,12 +12,18 @@ $(document).ready(function(){
         var todos = $(".todoInput").val();
         allToDos.push(todos);
         //Local Storage//
-        localStorage.setItem(todoIndex, todos);
-        console.log(todos);
+       
         var todoText = $("<li>").html(todos);
-        todoText.prepend("<input type='checkbox' class='checkbox'></input>")
-        $(".list-group").append(todoText);
-        $(".list-group-item").text(todos);
+        if (todos === ''){
+            alert("Debes agregar una tarea");
+        } else {
+            localStorage.setItem(todoIndex, todos);
+            console.log(todos);
+            todoText.prepend("<input type='checkbox' class='checkbox'></input>")
+            $(".list-group").append(todoText);
+            $(".list-group-item").text(todos);
+        }
+        
     })
 
     //On click event for stricking out the text//
