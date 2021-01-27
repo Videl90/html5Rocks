@@ -1,3 +1,4 @@
+/*Header Styles*/
 .header{
     background-color:#D8D8D8;
 }
@@ -14,19 +15,8 @@ img {
     padding-top:20px;
 }
 
-
-
-* {
-    box-sizing: border-box;
-  }
   
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style the list items */
+  /* List Styles*/
   ul li {
     cursor: pointer;
     padding: 12px 8px 12px 40px;
@@ -41,7 +31,7 @@ img {
   }
   
 
-  /* When clicked on, add a background color and strike out text */
+  /* On click strike out text */
   ul li.check {
     text-decoration: line-through;
   }
@@ -50,7 +40,7 @@ img {
   }
   
 
-  /*Input Style*/
+  /*Input Styles*/
   
   .todoInput {
       border-radius: 4px;
@@ -65,7 +55,7 @@ img {
   }
 
   
-  /* Style the "Add" button */
+/* Add Button Styles */
   .addBtn{
     background-color:#9B9B9B;
     color:#ffffff;
@@ -76,6 +66,7 @@ img {
     font-weight: bold;
     margin-left: 30px;
     padding:3px;
+    border:none;
 }
 
   
@@ -83,7 +74,7 @@ img {
     background-color: #bbb;
   }
 
-  /* Media queries*/
+/* Media queries*/
 
 @media only screen and (max-width:1199px) {
     .addBtn{
@@ -100,6 +91,7 @@ img {
     .addBtn{
         width: 200px;
         margin-left:150px;
+        margin-top:10px;
     }
     ul li {
         width:359px;
