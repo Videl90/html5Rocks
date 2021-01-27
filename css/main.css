@@ -1,0 +1,93 @@
+.header{
+    background-color:#D8D8D8;
+}
+
+img {
+    padding:10px 30px;
+    width:150px;
+}
+ 
+.title{
+    color:#4A4A4A;
+    font-family: "Arial", "sans-serif";
+    font-size:36px;
+    padding-top:20px;
+}
+
+.addBtn{
+    background-color:#9B9B9B;
+    color:#ffffff;
+    border-radius:4px;
+    font-family: 'Arial', sans-serif;
+    font-size:20px;
+    width: 300px;
+    font-weight: bold;
+}
+
+
+/*PRUEBA */
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #D8D8D8;
+    font-size: 16px;
+    transition: 0.2s;
+    font-family: 'Arial', sans-serif;
+    color:#4A4A4A;
+    font-weight: bold;
+    list-style-type: none;
+    width: 646px;
+  }
+  
+
+  /* When clicked on, add a background color and strike out text */
+  ul li.check {
+    text-decoration: line-through;
+  }
+  
+
+  /*Input Style*/
+  input {
+      border-radius: 4px;
+      width: 400px;
+      font-family: 'Arial', sans-serif;
+  }
+
+  .input-group {
+      margin-top:30px;
+      margin-bottom:10px;
+  }
+
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 3px;
+    width: 34%;
+    background: #9b9b9b;
+    background-color: rgb(155, 155, 155);
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    height: 30px;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
