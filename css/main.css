@@ -14,25 +14,13 @@ img {
     padding-top:20px;
 }
 
-.addBtn{
-    background-color:#9B9B9B;
-    color:#ffffff;
-    border-radius:4px;
-    font-family: 'Arial', sans-serif;
-    font-size:20px;
-    width: 300px;
-    font-weight: bold;
-}
 
 
-/*PRUEBA */
-
-/* Include the padding and border in an element's total width and height */
 * {
     box-sizing: border-box;
   }
   
-  /* Remove margins and padding from the list */
+
   ul {
     margin: 0;
     padding: 0;
@@ -41,16 +29,14 @@ img {
   /* Style the list items */
   ul li {
     cursor: pointer;
-    position: relative;
     padding: 12px 8px 12px 40px;
     background: #D8D8D8;
     font-size: 16px;
-    transition: 0.2s;
     font-family: 'Arial', sans-serif;
     color:#4A4A4A;
     font-weight: bold;
     list-style-type: none;
-    width: 646px;
+    width: 681px;
     border-bottom: 1px solid #4A4A4A;
   }
   
@@ -59,13 +45,18 @@ img {
   ul li.check {
     text-decoration: line-through;
   }
+  .checkbox {
+      margin-right: 10px;
+  }
   
 
   /*Input Style*/
-  input {
+  
+  .todoInput {
       border-radius: 4px;
       width: 400px;
       font-family: 'Arial', sans-serif;
+      padding-left:10px;
   }
 
   .input-group {
@@ -75,20 +66,65 @@ img {
 
   
   /* Style the "Add" button */
-  .addBtn {
-    padding: 3px;
-    width: 34%;
-    background: #9b9b9b;
-    background-color: rgb(155, 155, 155);
-    color: #ffffff;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
+  .addBtn{
+    background-color:#9B9B9B;
+    color:#ffffff;
+    border-radius:4px;
+    font-family: 'Arial', sans-serif;
+    font-size:20px;
+    width: 240px;
+    font-weight: bold;
     margin-left: 30px;
-    height: 30px;
-  }
+    padding:3px;
+}
+
   
   .addBtn:hover {
     background-color: #bbb;
   }
+
+  /* Media queries*/
+
+@media only screen and (max-width:1199px) {
+    .addBtn{
+        width: 220px;
+        margin-left:180px;
+    }
+    ul li {
+        width:400px;
+      }
+    
+}
+
+@media only screen and (max-width:991px) {
+    .addBtn{
+        width: 200px;
+        margin-left:150px;
+    }
+    ul li {
+        width:359px;
+      }
+
+}
+
+@media only screen and (max-width:767px) {
+    ul li {
+        width:260px;
+      }
+  
+    
+}
+
+@media only screen and (max-width:575px) {
+    .addBtn{
+        width: 200px;
+        margin-left:90px;
+    }
+
+    ul li {
+        width:200px;
+      }
+
+
+  
+}

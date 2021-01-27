@@ -12,6 +12,7 @@ $(document).ready(function(){
         localStorage.setItem(todoIndex, todos);
         console.log(todos);
         var todoText = $("<li>").html(todos);
+        todoText.prepend("<input type='checkbox' class='checkbox'></input>")
         $(".list-group").append(todoText);
         $(".list-group-item").text(todos);
     })
