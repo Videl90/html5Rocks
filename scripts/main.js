@@ -15,6 +15,11 @@ $(document).ready(function(){
         $(".list-group").append(todoText);
         $(".list-group-item").text(todos);
     })
+
+    $(document).on("click", function(e){
+        $target = $(e.target);
+            $target.addClass('check')
+    })
     }
 
     renderTodos();
